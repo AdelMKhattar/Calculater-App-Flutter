@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_calculater/controllers/numbersController.dart';
+import 'package:my_calculater/controllers/basicCalculaterController.dart';
 
 class NumberIcon extends StatelessWidget {
   final String number;
@@ -8,7 +8,7 @@ class NumberIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    NumbersController controller = Get.find();
+    BasicCalculaterController controller = Get.find();
     return Container(
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(50)),
       width: 50,

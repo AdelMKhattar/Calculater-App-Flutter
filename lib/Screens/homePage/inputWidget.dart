@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttericon/typicons_icons.dart';
 import 'package:get/get.dart';
-import 'package:my_calculater/controllers/numbersController.dart';
+import 'package:my_calculater/controllers/basicCalculaterController.dart';
 import 'package:my_calculater/core/widgets/numberIcon.dart';
 
 class inputWidget extends StatelessWidget {
@@ -9,7 +9,7 @@ class inputWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    NumbersController controller = Get.find();
+    BasicCalculaterController controller = Get.find();
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: Container(
@@ -38,7 +38,9 @@ class inputWidget extends StatelessWidget {
                       size: 30,
                     )),
                 IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      controller.percentagePressed();
+                    },
                     icon: const Icon(
                       Icons.percent_outlined,
                       size: 30,
@@ -129,7 +131,7 @@ class inputWidget extends StatelessWidget {
                       borderRadius: BorderRadius.circular(40)),
                   child: IconButton(
                     onPressed: () {
-                      controller.calculate();
+                      controller.equalPressed();
                     },
                     icon: const Icon(
                       Typicons.eq,

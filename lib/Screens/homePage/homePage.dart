@@ -3,16 +3,16 @@ import 'package:fluttericon/typicons_icons.dart';
 import 'package:fluttericon/modern_pictograms_icons.dart';
 import 'package:get/get.dart';
 import 'package:my_calculater/Screens/homePage/inputWidget.dart';
-import 'package:my_calculater/controllers/numbersController.dart';
+import 'package:my_calculater/controllers/basicCalculaterController.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    NumbersController controller = Get.put(NumbersController());
+    BasicCalculaterController controller = Get.put(BasicCalculaterController());
     double screenWidth = MediaQuery.of(context).size.width;
-    return GetBuilder<NumbersController>(builder: (context) {
+    return GetBuilder<BasicCalculaterController>(builder: (context) {
       return Scaffold(
         // appBar: AppBar(
         //   toolbarHeight: 10,
