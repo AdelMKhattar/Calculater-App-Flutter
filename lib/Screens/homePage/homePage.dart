@@ -50,6 +50,12 @@ class HomePage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.fromLTRB(10, 10, 25, 10),
                 child: Container(
+                  decoration: BoxDecoration(
+                      border: Border(
+                          bottom: BorderSide(
+                    width: 2,
+                    color: Colors.grey.shade400,
+                  ))),
                   alignment: Alignment.bottomRight,
                   height: 225,
                   width: screenWidth,
@@ -60,8 +66,9 @@ class HomePage extends StatelessWidget {
                         controller.expression.isEmpty
                             ? "0"
                             : controller.expression,
-                        style:
-                            TextStyle(fontSize: controller.expressionTextSize),
+                        style: TextStyle(
+                            fontSize: controller.expressionTextSize,
+                            fontWeight: FontWeight.bold),
                         textAlign: TextAlign.right,
                       ),
                       Text(
@@ -73,41 +80,6 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              // Stack(
-              //   children: [
-              //     Container(
-              //       height: 225,
-              //       width: screenWidth,
-              //       decoration: const BoxDecoration(
-              //           border: Border(bottom: BorderSide(color: Colors.grey))),
-              //     ),
-              //     Positioned(
-              //       right: 20,
-              //       top: 60,
-              //       child: Container(
-              //         height: 100,
-              //         width: 300,
-              //         color: Colors.amber,
-              //         child: Center(
-              //           child: Text(
-              //             conroller.numbersList.isEmpty
-              //                 ? " "
-              //                 : conroller.numbersList.last,
-              //             style: TextStyle(fontSize: 30),
-              //           ),
-              //         ),
-              //       ),
-              //     ),
-              //     Positioned(
-              //       right: 20,
-              //       top: 160,
-              //       child: Text(
-              //         "20",
-              //         style: TextStyle(fontSize: 40),
-              //       ),
-              //     )
-              //   ],
-              // ),
               Flexible(child: inputWidget())
             ],
           ),

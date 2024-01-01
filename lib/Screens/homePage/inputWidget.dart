@@ -13,7 +13,6 @@ class inputWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: Container(
-          // color: Colors.amber,
           child: Column(
         children: [
           Padding(
@@ -28,6 +27,7 @@ class inputWidget extends StatelessWidget {
                     icon: const Icon(
                       Icons.clear_rounded,
                       size: 30,
+                      color: Colors.deepOrange,
                     )),
                 IconButton(
                     onPressed: () {
@@ -36,6 +36,7 @@ class inputWidget extends StatelessWidget {
                     icon: const Icon(
                       Icons.backspace_outlined,
                       size: 30,
+                      color: Colors.deepOrange,
                     )),
                 IconButton(
                     onPressed: () {
@@ -44,6 +45,7 @@ class inputWidget extends StatelessWidget {
                     icon: const Icon(
                       Icons.percent_outlined,
                       size: 30,
+                      color: Colors.deepOrange,
                     )),
                 IconButton(
                     onPressed: () {
@@ -52,6 +54,7 @@ class inputWidget extends StatelessWidget {
                     icon: const Icon(
                       Typicons.divide,
                       size: 30,
+                      color: Colors.deepOrange,
                     )),
               ],
             ),
@@ -70,6 +73,7 @@ class inputWidget extends StatelessWidget {
                   },
                   icon: const Icon(Typicons.cancel),
                   iconSize: 30,
+                  color: Colors.deepOrange,
                 ),
               ],
             ),
@@ -88,6 +92,7 @@ class inputWidget extends StatelessWidget {
                   },
                   icon: const Icon(Typicons.minus),
                   iconSize: 30,
+                  color: Colors.deepOrange,
                 ),
               ],
             ),
@@ -106,6 +111,7 @@ class inputWidget extends StatelessWidget {
                   },
                   icon: const Icon(Typicons.plus_outline),
                   iconSize: 30,
+                  color: Colors.deepOrange,
                 ),
               ],
             ),
@@ -120,6 +126,7 @@ class inputWidget extends StatelessWidget {
                     icon: const Icon(
                       Icons.swap_horiz,
                       size: 40,
+                      color: Colors.deepOrange,
                     )),
                 const NumberIcon(number: "0"),
                 const NumberIcon(number: "."),
@@ -127,7 +134,7 @@ class inputWidget extends StatelessWidget {
                   height: 60,
                   width: 60,
                   decoration: BoxDecoration(
-                      color: Colors.orange,
+                      color: Colors.deepOrange,
                       borderRadius: BorderRadius.circular(40)),
                   child: IconButton(
                     onPressed: () {

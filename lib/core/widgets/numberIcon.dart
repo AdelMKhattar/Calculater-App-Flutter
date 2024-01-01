@@ -18,9 +18,9 @@ class NumberIcon extends StatelessWidget {
           child: Text(
             number,
             style: const TextStyle(
-                color: Colors.black54,
-                fontSize: 35,
-                fontWeight: FontWeight.bold),
+                color: Colors.black87,
+                fontSize: 33,
+                fontWeight: FontWeight.normal),
           ),
         ),
         onTap: () {
