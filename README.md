@@ -1,6 +1,6 @@
 # my_calculater
 
-A new Flutter project.
+A replica of MIUI calculater.
 
 ## Getting Started
 
